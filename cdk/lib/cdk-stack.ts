@@ -1,5 +1,5 @@
 import cdk = require('@aws-cdk/core');
-import s3deploy= require('@aws-cdk/aws-s3-deployment');
+import s3deploy = require('@aws-cdk/aws-s3-deployment');
 import s3 = require('@aws-cdk/aws-s3');
 import { SPADeploy } from 'cdk-spa-deploy';
 
@@ -8,9 +8,9 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
 
     new SPADeploy(this, 'websiteDeploy')
-        .createBasicSite({
-          indexDoc: 'index.html',
-          websiteFolder: '../website/build'
-        })
+      .createBasicSite({
+        indexDoc: 'index.html',
+        websiteFolder: '../website/build'
+      })
   }
 }

@@ -10,5 +10,8 @@
     "test": "echo \"no ci/cd tests setup\""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cdk-spa-deploy": "^1.95.1"
+  }
 }
